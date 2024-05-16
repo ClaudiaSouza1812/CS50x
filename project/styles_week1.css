@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "biome w04 regular";
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.svg#Biome W04 Regular")format("svg");
+}
+@media only screen and (max-width: 767px) {
+    p {
+        font-size: 14px;
+        color: darkgray;
+        text-shadow: -3px 2px 3px black;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 100%;
+        align-content: left;
+    }
+    pre {
+        font-family: "biome w04 regular";
+        text-align: left;
+        color: darkgray;
+        text-overflow: ellipsis;
+        margin: 0px 0px 0px 10px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+pre {
+    font-family: "biome w04 regular";
+    text-align: left;
+    color: darkgray;
+    text-overflow: ellipsis;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
+}
+body {
+    text-align: center;
+    font-family: "biome w04 regular";
+}
+div#btn {
+    text-align: justify;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
+}
+p {
+    text-align: justify;
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+h6, h1, h3, h4, h5 {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+footer {
+    display: block;
+    border-top: 2px solid gray;
+}
+input {
+    background-color: black;
+    color: gray;
+}
+button {
+    background-color: gray;
+}
+.container {
+    max-width: 1000px;
+    align-content: justify;
+}
+
+

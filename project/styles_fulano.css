@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "biome w04 regular";
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.svg#Biome W04 Regular")format("svg");
+}
+@media only screen and (max-width: 767px) {
+    p {
+        font-size: 10px;
+        color: darkgray;
+        text-shadow: -3px 2px 3px black;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .myFrame01 {
+        display: none;
+        width: 100%;
+        height: 300px;
+    }
+    .smartimg{
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .myFrame02 {
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+    .smartWidth {
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .maxheight {
+        height: 500px;
+    }
+}
+body {
+    text-align: center;
+    font-family: "biome w04 regular";
+}
+iframe {
+    display: none;
+    width: 100%;
+    height: 600px;
+    border: thick solid black;
+    border-radius: 5px;
+}
+p.main {
+    text-align: justify;
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+p {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.large {
+    color: darkgray;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -3px 2px 3px black;
+}
+.small {
+    color: darkgray;
+    font-size: 10px;
+    text-shadow: -3px 2px 3px black;
+}
+.nav-link, h6, h5 {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.container-fluid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1600px
+}
+.img-thumbnail {
+    background: black;
+    border: black;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.myBorder {
+    border: thick solid black;
+    border-radius: 5px;
+}
+.btn-wrap {
+    position: relative;
+    text-align: center;
+}
+.btn-wrap button {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border: 0 none;
+}
+footer {
+    border-top: 2px solid gray;
+}

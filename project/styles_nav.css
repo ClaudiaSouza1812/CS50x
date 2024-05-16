@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "biome w04 regular";
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.svg#Biome W04 Regular")format("svg");
+}
+
+.nav-link {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.dropdown-item {
+    color: darkgray;
+    text-align: center;
+}
+.dropdown-menu {
+    position: absolute;
+    background-color: black;
+}
+.navbar {
+    border-bottom: 2px solid gray;
+}
+
+

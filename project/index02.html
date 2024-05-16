@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--make page responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <meta property="og:title" content="road2dev Site">
+    <meta property="og:description" content="My Journey Within Development World">
+    <meta property="og:image" content="images/logo05.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="styles_index.css" rel="stylesheet">
+    <title>
+      &#60;road2dev&#62;
+    </title>
+  </head>
+  <body class="bg-dark bg-opacity-40">
+    <!--navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <!--end of navigation bar-->
+    <p></p>
+    <div class="container">
+      <div class="col">
+        <h2 class="large">&#60;If You Want&#62;</h2>
+        <h2 class="large">&#60;You Can&#62;</h2>
+      </div><p></p>
+
+      <h6>&#60;My Path&#62;</h6>
+      <div class="row align-items-start">
+        <div class="col">
+          <a class="nav-link" href="fulanos.html">
+            <img id="img02" src="images/fulano10.png" alt="Fulano's Game Logo" class="img-thumbnail"><br>
+            <h6>Fulano's Game</h6>
+          </a>
+        </div>
+        <div class="col">
+          <a class="nav-link" href="#">
+              <img id="img03" src="images/frontend07.png" alt="Grasshopper Logo" class="img-thumbnail"><br>
+              <h6>Front - End</h6>
+          </a>
+        </div>
+        <div class="col">
+          <a class="nav-link" href="#">
+              <img id="img04" src="images/backend06.png" alt="Codecademy Logo" class="img-thumbnail"><br>
+              <h6>Back - End</h6>
+          </a>
+        </div>
+        <div class="col">
+          <a class="nav-link" href="cs50.html">
+            <img id="img01" src="images/cs50_03.png" alt="CS50 Logo" class="img-thumbnail"><br>
+            <h6>CS50</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const images = [document.getElementById('img01'), document.getElementById('img02'), document.getElementById('img03'), document.getElementById('img04')];
+      for (let element in images) {
+          images[element].onmouseover = function() {
+          this.style.borderLeft = "thick solid black";
+          this.style.borderRight = "thick solid black";
+        };
+        images[element].onmouseout = function() {
+          this.style.borderLeft = "";
+          this.style.borderRight = "";
+        };
+      }
+    </script>
+    <h6>&#60;News&#62;</h6>
+    <div class="container">
+      <div id="carLegBlack" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carLegBlack" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carLegBlack" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carLegBlack" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carLegBlack" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carLegBlack" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <a class="nav-link" href="#">
+              <img src="images/webdev06.png" alt="Web Dev Slide" class="d-block w-100 smartimg maxheight">
+              <div class="carousel-caption d-md-block">
+                <h5 class="myShadowOne">&#60;Web Dev&#62;</h5>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link" href="#">
+              <img src="images/mobdev06.png" alt="Back End Slide" class="d-block w-100 smartimg maxheight">
+              <div class="carousel-caption d-md-block">
+                <h5 class="myShadowOne">&#60;Mobile&#62;</h5>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link" href="#">
+              <img src="images/ia06.png" alt="Front - End Slide" class="d-block w-100 smartimg maxheight">
+              <div class="carousel-caption d-md-block">
+                <h5 class="myShadowOne">&#60;AI&#62;</h5>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link" href="#">
+              <img src="images/analytics01.png" alt="Data Analysis Slide" class="d-block w-100 smartimg maxheight">
+              <div class="carousel-caption d-md-block">
+                <h5 class="myShadowOne">&#60;Analytics&#62;</h5>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a class="nav-link" href="#">
+              <img src="images/datasci05.png" alt="Data Science Slide" class="d-block w-100 smartimg maxheight">
+              <div class="carousel-caption d-md-block">
+                <h5 class="myShadowOne">&#60;Data Science&#62;</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carLegBlack" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carLegBlack" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br><br>
+    <footer><br>
+      <h6>Send Comments Or Suggestions to <a href="#">Road2Dev</a></h6>
+      <h6><a href="#">Copyright &#169; </a>Road2Dev Corporation 2023. All Rights Reserved</h6>
+    </footer><br>
+  </body>
+</html>
+
+

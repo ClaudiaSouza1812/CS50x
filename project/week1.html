@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--describe metadata (information about data)-->
+        <!--specifie characters encoding-->
+        <meta charset="utf-8">
+        <!--make page responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--define keywords, description, author and content for serach engines-->
+        <meta property="og:title" content="&#60;road2dev&#62;">
+        <meta property="og:type" content="developer">
+        <meta property="og:description" content="Learn to code through my journey within Development World!!!">
+        <meta property="og:image" content="images/c01.png">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="&#60;road2dev&#62;">
+        <meta property="fb:admins" content="&#60;road2dev&#62; Homepage">
+        <meta name="x:card" content="&#60;road2dev&#62; Homepage">
+        <meta name="x:url" content="">
+        <meta name="x:title" content="road2dev Site">
+        <meta name="x:description" content="Learn to code through my journey within Development World!!!">
+        <meta property="x:image" content="images/fulano10.png">
+        <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap">
+        <meta name="author" content="Claudia Simone de Souza">
+        <!--integrate bootstrap library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="/path/to/highlight.min.js"></script>
+        <!--link css file-->
+        <link rel="stylesheet" href="/path/to/styles/default.css">
+        <link href="styles_week1.css" rel="stylesheet">
+        <title>
+            &#60;road2dev&#62;Week 1 - C
+        </title>
+    </head>
+    <body class="bg-dark bg-opacity-40">
+        <div id="div-placeholder">
+            <!--Empty-->
+        </div><br>
+
+        <script>
+            $(function() {
+                $("#div-placeholder").load("nav.html");
+            });
+
+            jQuery(document).ready(function($) {
+                $('pre').each(function(week1){
+                    $(this).text($(this).html());
+                });
+            });
+
+            hljs.highlightAll();
+
+        </script>
+
+        <div class="container">
+            <h1>Week 1 - C</h1>
+            <h4>Practice Problems</h4>
+            <p>Practice problems are usually easier and act as a warm-up for Lab and Problem Set</p>
+            <p>This problem purpose is to become familiar with C syntax, learn what C compiler error
+                messages mean and get practice debugging:</p>
+            <div id="6" class="col bg-black"><br>
+                <h3>debug.c</h3>
+                <pre><!--
+                    // Become familiar wih C syntax
+                    // Learn to debug buggy code
+                    #include <cs50.h>
+                    #include <stdio.h>
+
+                    int main(void)
+                    {
+                        // Ask for your name and where live
+                        string name = get_string("<p>What is your name?</p> \n");
+                        string location = get_string("<p>Where do you live?</p> \n");
+
+                        // Say hello
+                        printf("Hello, %s, from %s!\n", name, location);
+                    }-->
+                </pre>
+                <p class="questions">What is your name?</p>
+                <p class="questions">Where do you live?</p>
+                <p><!--Insert Your Username:--></p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show(6)">></button>
+                    <input autocomplete="off" id="question" name="question" placeholder="" type="text">
+                    <input autocomplete="off" id="answer" name="answer" placeholder="" type="text" disabled>
+                </div><br>
+            </div><br>
+            <p>This problem purpose is to work with different data types,
+                practice type casting,
+                use math operations and
+                create a function with input parameters and return value:</p>
+            <div class="col bg-black"><br>
+                <h3>half.c</h3>
+                <pre><!--
+                    // Calculate your half of a restaurant bill
+                    // Data types, operations, type casting, return value
+
+                    #include  <cs50.h>
+                    #include  <stdio.h>
+
+                    float half(float bill, float tax, int tip);
+
+                    int main(void)
+                    {
+                        float bill_amount = get_float("Bill before tax and tip: ");
+                        float tax_percent = get_float("Sale Tax Percent: ");
+                        int tip_percent = get_int("Tip percent: ");
+
+                        printf("You will owe $%.2f each!\n", half(bill_amount, tax_percent, tip_percent));
+                    }
+
+                    // TODO: Complete the function
+                    float half(float bill, float tax, int tip)
+                    {
+                        tax = (bill * (tax / 100));
+                        //printf("%f\n", tax);
+
+                        bill = bill + tax;
+                        //printf("%f\n", bill);
+
+                        float tip1 = (float)tip;
+                        tip1 = (bill * (tip1 / 100));
+                        //printf("%.2f\n", tip1);
+
+                        bill = bill + tip1;
+                        //printf("%f\n", bill);
+
+                        return bill / 2;
+                    }-->
+                </pre>
+                <p><!--Insert Your Username:--></p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <p>This problem purpose is to practice using for loops, using modulo
+                and creating a Boolean function:</p>
+            <div class="col bg-black"><br>
+                <h3>prime.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+
+                    bool prime(int number);
+
+                    int main(void)
+                    {
+                        int min;
+                        do
+                        {
+                            min = get_int("Minimum: ");
+                        }
+                        while (min < 1);
+
+                        int max;
+                        do
+                        {
+                            max = get_int("Maximum: ");
+                        }
+                        while (min >= max);
+
+                        for (int i = min; i <= max; i++)
+                        {
+                            if (prime(i))
+                            {
+                                printf("%i\n", i);
+                            }
+                        }
+                    }
+
+                    bool prime(int number)
+                    {
+                        //integer variable with a true value;
+                        int prime = true;
+                        //loop that will check the number until its reaches the limit;
+                        for (int i = 2; i < number; i++)
+                            //a condition that will check if % (modulo, rest) of number is 0, if it is, the number
+                            //isin't prime, because prime numbers always has a rest, so the value of variable
+                            //prime will be changed to false;
+                        {
+                            if (number % i == 0)
+                            {
+                                prime = false;
+                                break;
+                            }
+                        }
+                        //number receive the value of prime;
+                        number = prime;
+
+                        return number;
+                    }-->
+                </pre>
+                <p><!--Insert Your Username:--></p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <div class="col">
+                <h4>Lab</h4>
+                <p>In the Lab you are invited to collaborate with other colleagues to solve problems.</p>
+                    <p>This problem purpose is to determine how long it takes for a population to reach a
+                        particular size:</p>
+            </div>
+            <div class="col bg-black"><br>
+                <h3>population.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+
+                    int main(void)
+                    {
+                        // TODO: Prompt for start size
+                        int start = 0;
+                        do
+                        {
+                            start = get_int("Starting population size: \n");
+                        }
+                        while (start < 9);
+
+                        // TODO: Prompt for end size
+                        int end = 0;
+                        do
+                        {
+                            end = get_int("Ending population size: \n");
+                        }
+                        while (end < start);
+
+                        // TODO: Calculate number of years until we reach threshold
+                        int nb = 3;
+                        int np = 4;
+                        int i;
+
+                        for (i = 0; start < end; i++)
+                        {
+                            int born = start / nb;
+                            int pass = start / np;
+                            start = start + born - pass;
+                        }
+
+                        // TODO: Print number of years
+                        printf("Years: %i\n", i);
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <div class="col">
+                <h4>Problem Set</h4>
+                <p>The very first Problem Set in C proposed by the course, which consists in
+                    get the user name and printing it with a simple word on the terminal:</p>
+            </div>
+            <div class="col bg-black"><br>
+                <h3>hello.c</h3>
+                <pre><!--
+                    //telling the compiler to load cs50 library;
+                    //telling the compiler to load standard input and output library, in wich we have the integer, string e etc data type;
+                    #include <cs50.h>
+                    #include <stdio.h>
+                    #include <string.h>
+
+                    //its a function that has a return, but dont receives any argument
+                    // the \n command put the $ on the next line;
+                    // the %s command tells to the program to put a string here,
+                    // that will be the string variable declared after it (answer);
+                    int main(void)
+                    {
+                        //prompt users to input their names
+                        //print "hello" plus the user input
+                        string name = get_string("What is your name?\n");
+                        printf("hello, %s\n", name);
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <p>The objective of the problem is to build a pyramid of blocks aligned to the right,
+                like in the Mario Bros game:</p>
+            <div class="col bg-black"><br>
+                <h3>marioless.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+                    #include <string.h>
+
+                    int main(void)
+                    {
+                        //user imput
+                        int v;
+
+                        //user imput control
+                        do
+                        {
+                            v = get_int("how tall you want this pyramid? ");
+                        }
+                        while (v < 1 || v > 8);
+
+
+                        //piramid builder, prompt the lines
+                        int i;
+                        //hashtag holder, prompt the columns
+                        int h;
+                        //space holder, prompt the columns
+                        int s;
+
+                        for (i = 0; i < v; i++)
+                        {
+                            for (s = v - 1; s > h; s--)
+                            {
+                                printf(" ");
+                            }
+                            for (h = 0; h <= i; h++)
+                            {
+                                printf("#");
+                            }
+
+                            printf("\n");
+                        }
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <p>The objective of the problem is to build pyramids from adjacent blocks,
+                like in the Mario Bros. game:</p>
+            <div class="col bg-black"><br>
+                <h3>mariomore.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+
+                    int main(void)
+                    {
+                        //user imput
+                        int v;
+
+                        //user imput control
+                        do
+                        {
+                            v = get_int("how tall you want this pyramid? ");
+                        }
+                        while (v < 1 || v > 8);
+
+
+                        //piramid builder, prompt the lines
+                        int i;
+                        //hashtag holder, prompt the columns
+                        int h;
+                        //left space holder, prompt the columns
+                        int s;
+                        //middle space holder, prompt the columns
+                        int m;
+
+                        for (i = 0; i < v; i++)
+                        {
+                            for (s = v - 1; s > h; s--)
+                            {
+                                printf(" ");
+                            }
+                            for (h = 0; h <= i; h++)
+                            {
+                                printf("#");
+                            }
+                            for (m = i; m <= i; m++)
+                            {
+                                printf("  ");
+                            }
+                            for (h = 0; h <= i; h++)
+                            {
+                                printf("#");
+                            }
+
+                            printf("\n");
+                        }
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <p>This problem purpose is to prompt the user for the number of cents that a customer is owed and then
+                prints the smallest number of coins with which that change can be made:</p>
+            <div class="col bg-black"><br>
+                <h3>cash.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+
+                    int get_cents(void);
+                    int calculate_quarters(int cents);
+                    int calculate_dimes(int cents);
+                    int calculate_nickels(int cents);
+                    int calculate_pennies(int cents);
+
+                    int main(void)
+                    {
+                        // Ask how many cents the customer is owed
+                        int cents = get_cents();
+
+                        // Calculate the number of quarters to give the customer
+                        int quarters = calculate_quarters(cents);
+                        cents = cents - quarters * 25;
+
+                        // Calculate the number of dimes to give the customer
+                        int dimes = calculate_dimes(cents);
+                        cents = cents - dimes * 10;
+
+                        // Calculate the number of nickels to give the customer
+                        int nickels = calculate_nickels(cents);
+                        cents = cents - nickels * 5;
+
+                        // Calculate the number of pennies to give the customer
+                        int pennies = calculate_pennies(cents);
+                        cents = cents - pennies * 1;
+
+                        // Sum coins
+                        int coins = quarters + dimes + nickels + pennies;
+
+                        // Print total number of coins to give the customer
+                        printf("%i\n", coins);
+                    }
+
+                    int get_cents(void)
+                    {
+                        //user imput
+                        int n;
+                        //user imput control
+                        do
+                        {
+                            n = get_int("How many cents owed? ");
+                        }
+                        while (n < 0);
+                        return n;
+                    }
+
+                    int calculate_quarters(int cents)
+                    {
+                        return cents / 25;
+                    }
+
+                    int calculate_dimes(int cents)
+                    {
+                        return cents / 10;
+                    }
+
+                    int calculate_nickels(int cents)
+                    {
+                        return cents / 5;
+                    }
+
+                    int calculate_pennies(int cents)
+                    {
+                        return cents / 1;
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+            <p>This problem purpose is to write a program that prompts the user for a credit card number and
+                then reports whether it is a valid American Express, MasterCard, or Visa card number: </p>
+            <div class="col bg-black"><br>
+                <h3>credit.c</h3>
+                <pre><!--
+                    #include <cs50.h>
+                    #include <stdio.h>
+                    #include <math.h>
+
+
+                    int calc_checksum(long n, int lenght);
+                    int check_length(long n);
+                    int check_card(long n, int lenght);
+
+
+                    int main(void)
+                    {
+                        // prompt to user the card number
+                        // check the card numbers length
+                        // run function Luhns algorithm
+                        // print the card number
+
+                        long n = get_long("Card number: ");
+                        int length = check_length(n);
+                        int check = calc_checksum(n, length);
+                        int card = check_card(n, length);
+                        //printf("%li\n", n);
+
+                        if (check == 0)
+                        {
+                            if (length == 13 || length == 16)
+                            {
+                                if (card > 39 & card < 50)
+                                {
+                                    printf("VISA\n");
+                                }
+                                else if (card > 50 & card < 56)
+                                {
+                                    printf("MASTERCARD\n");
+                                }
+                                else
+                                {
+                                    printf("INVALID\n");
+                                }
+                            }
+                            else if (length == 15)
+                            {
+                                if (card == 34 || card == 37)
+                                {
+                                    printf("AMEX\n");
+                                }
+                                else
+                                {
+                                    printf("INVALID\n");
+                                }
+                            }
+                            else
+                            {
+                                printf("INVALID\n");
+                            }
+                        }
+                        else
+                        {
+                            printf("INVALID\n");
+                        }
+
+                    }
+
+
+
+                    int check_length(long n)
+                    {
+                        // numbers counter
+                        int count = 0;
+                        do
+                        {
+                            count++;
+                            n /= 10;
+                        }
+                        while (n != 0);
+                        //printf("%i\n", count);
+                        return count;
+                    }
+
+                    int check_card(long n, int length)
+                    {
+                        int nc = 2;
+                        int c;
+                        int l = length;
+                        for (c = l; c > nc; c--)
+                        {
+                            n /= 10;
+                        }
+                        //printf("%li\n", n);
+                        return n;
+                    }
+
+
+                    int calc_checksum(long n, int length)
+                    {
+                        int t = (length / 2) + 1;
+                        //printf("%i\n", t);
+                        int su = 0;
+                        int sp = 0;
+                        int mult = 2;
+
+                        for (int j = 0; j < t; j++)
+                        {
+                            int u = n % 10;
+                            n /= 10;
+                            su = su + u;
+                            //printf("%i\n", u);
+
+                            int p = n % 10;
+                            n /= 10;
+                            p = p * mult;
+                            if (p > 9)
+                            {
+                                int d2 = p % 10;
+                                p /= 10;
+                                int d1 = p % 10;
+                                p = d1 + d2;
+                            }
+                            sp = sp + p;
+                            //printf("%i\n", p);
+                        }
+                        //printf("Sum last %i\n", su);
+                        //printf("Sum sec last %i\n", sp);
+                        int total = sp + su;
+                        int lastnumber = total % 10;
+                        //printf("Last number %i\n", lastnumber);
+                        return lastnumber;
+                    }-->
+                </pre>
+                <p>
+                    <!--Insert Your Username:-->
+                </p>
+                <div id="btn">
+                    <button id="btn01" name="submit" type="submit" onclick="show()">></button>
+                    <input autocomplete="off" id="result" name="result" placeholder="" type="text" disabled>
+                    <input autocomplete="off" autofocus id="username" name="Username" placeholder="" type="text">
+                </div><br>
+            </div><br>
+        </div>
+
+        <script>
+
+            let list = document.getElementsByTagName("div");
+
+            function show(i) {
+                let exercise = list[i];
+                let questions = exercise.getElementsByClassName("questions");
+                let n = 0;
+
+                while (n < questions.length) {
+                    document.getElementById("question").placeholder = questions[n].innerHTML;
+                    n++
+                    document.getElementById("question").addEventListener("input", aswFunction);
+
+                    function aswFunction() {
+                        document.getElementById("answer").placeholder = "hello " + document.getElementById("question").value;
+                    }
+                }
+            };
+
+        </script>
+
+        <footer>
+            <div id="footer-placeholder">
+                <!--Empty-->
+            </div>
+            <!--make javascript to link the nav html-->
+            <script>
+                $(function() {
+                    $("#footer-placeholder").load("footer.html");
+                });
+            </script>
+            <!--end of navigation bar-->
+        </footer>
+    </body>
+</html>

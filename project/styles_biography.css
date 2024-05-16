@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "biome w04 regular";
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.svg#Biome W04 Regular")format("svg");
+}
+@media only screen and (max-width: 767px) {
+    h6 {
+        font-size: 12px;
+    }
+    .smartimg {
+        width: 100%;
+        height: 200px;
+    }
+    .container {
+        max-width: 100%;
+        align-content: center;
+    }
+    p.main {
+        font-size: 14px;
+        text-align: justify;
+        color: darkgray;
+        text-shadow: -3px 2px 3px black;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .smartimg {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .smartimg {
+        width: 100%;
+        height: 500px;
+    }
+    .container {
+        max-width: 100%;
+        align-content: center;
+    }
+}
+body {
+    text-align: center;
+    font-family: "biome w04 regular";
+}
+p.main {
+    text-align: justify;
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.large {
+    color: darkgray;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -3px 2px 3px black;
+}
+.nav-link, h6 {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.myBorder {
+    border: thick solid black;
+    border-radius: 5px;
+}
+.img-thumbnail {
+    background: black;
+    border: black;
+    box-sizing: border-box;
+}
+footer {
+    border-top: 2px solid gray;
+}
+.container {
+    max-width: 1000px;
+    align-content: center;
+}
+
