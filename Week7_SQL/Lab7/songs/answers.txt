@@ -1,0 +1,4 @@
+first question: i would characterize a listener aura by sum the average of its danceability and energy values, the result would be checked on
+a rating and it'd return its aurea.
+second question: it would be inefficient because of the randowmcally choices made by the app, so a better way to do that could
+be to calculate on ly the songs that the user has searched and listened until the end.
