@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "biome w04 regular";
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.svg#Biome W04 Regular")format("svg");
+}
+@media only screen and (max-width: 430px) {
+    p {
+        font-size: 10px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .myFrame01 {
+        width: 375px;
+        height: 200px;
+    }
+    .smartimg {
+        width: 375px;
+        height: 200px;
+    }
+    .carousel-caption {
+        height: 70px;
+    }
+    .myShadowOne {
+        font-size: 25px;
+    }
+    .img-thumbnail {
+        width: 100%;
+        height: 115px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .maxheight {
+        height: 400px;
+    }
+    .img-thumbnail {
+        width: 100%;
+        height: 190px;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .myFrame02 {
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+    .maxheight {
+        height: 500px;
+    }
+    .smartWidth {
+        width: 1000px;
+    }
+    .myShadowOne {
+        font-size: 40px;
+    }
+    .img-thumbnail {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (horizontal-viewport-segments: 2) {
+    /* styles applied in double-portrait (wide) mode */
+    .container {
+        max-width: 600px
+    }
+}
+/* styles applied in double-landscape (tall) mode */
+@media (vertical-viewport-segments: 2) {
+    .container {
+        max-width: 600px
+    }
+
+}
+@media (horizontal-viewport-segments:3) {
+    /* styles applied in triple-portrait (really wide) mode */
+
+}
+body {
+    font-family: "biome w04 regular";
+    text-align: center;
+    width: 100%;
+}
+iframe {
+    display: none;
+    width: 100%;
+    height: 600px;
+    border: thick solid black;
+    border-radius: 5px;
+}
+p {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.myShadowOne {
+    color: black;
+    text-shadow: -3px 2px 3px white;
+    font-family: "biome w04 regular";
+}
+.myShadowTwo {
+    color: black;
+    text-shadow: -3px 2px 3px white;
+    font-size: 20px;
+    font-family: "biome w04 regular";
+}
+.large {
+    color: darkgray;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -3px 2px 3px black;
+}
+h2 {
+    color: darkgray;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -3px 2px 3px black;
+    margin: 0px 0px 0px 0px;
+}
+.small {
+    color: darkgray;
+    font-size: 10px;
+    text-shadow: -3px 2px 3px black;
+}
+h6, h5 {
+    color: darkgray;
+    text-shadow: -3px 2px 3px black;
+}
+.container-fluid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner {
+    background: black;
+    border: thick solid black;
+    border-radius: 5px;
+}
+.carousel-caption {
+    text-align: center;
+}
+
+.img-thumbnail {
+    background: black;
+    border: black;
+    box-sizing: border-box;
+}
+.myBorder {
+    border: thick solid black;
+    border-radius: 5px;
+}
+footer {
+    border-top: 2px solid gray;
+}
+
+
+
+
+
+
+
+

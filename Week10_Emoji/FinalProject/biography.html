@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--describe metadata (information about data)-->
+        <!--specifie characters encoding-->
+        <meta charset="utf-8">
+        <!--make page responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <!--define keywords, description, author and content for serach engines-->
+        <meta property="og:title" content="&#60;road2dev&#62; Biography">
+        <meta property="og:type" content="developer">
+        <meta property="og:description" content="See how you can migrate to Development World like i did!!!">
+        <meta property="og:image" content="images/fulano10.png">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="&#60;road2dev&#62;">
+        <meta property="fb:admins" content="&#60;road2dev&#62; Claudia Simone de Souza Biography">
+        <meta name="x:card" content="&#60;road2dev&#62; Claudia Simone de Souza Biography">
+        <meta name="x:url" content="">
+        <meta name="x:title" content="&#60;road2dev&#62; Biography">
+        <meta name="x:description" content="See how you can migrate to Development World like i did!!!">
+        <meta property="x:image" content="images/fulano10.png">
+        <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap">
+        <meta name="author" content="Claudia Simone de Souza">
+        <!--integrate bootstrap library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!--link css file-->
+        <link href="styles_biography.css" rel="stylesheet">
+        <title>
+            &#60;road2dev&#62;Biography
+        </title>
+    </head>
+    <body class="bg-dark bg-opacity-40">
+        <div id="nav-placeholder">
+            <!--empty-->
+        </div>
+        <script>
+            $(function() {
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <div class="container"><br>
+            <div class="col">
+                <h2 class="large">&#60;Biography&#62;</h2>
+            </div><br>
+            <div class="col">
+                <a class="nav-link" style="color:white;" href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">
+                    <img id="img01" src="images/biography06.png" alt="Biography Art" class="myBorder smartimg">
+                </a>
+            </div><br>
+            <div class="col">
+                <h2 class="large">&#60;Who Am I?&#62;</h2><br>
+                <p class="main">
+                    Hello, my name is Claudia Souza, nice to meet you! I live in Coimbra, Portugal.
+                    Although I have a solid and successful professional trajectory in the development
+                    and management of furniture design and engineering projects, I started a career
+                    reorientation a year ago, migrating to software engineering out of pure passion.
+                    Working every day with intelligence and dedication, I try to add my experience and
+                    incessant search for excellence within the world of Software Development, with a
+                    portfolio that contains back-end, web development and mobile projects. I am a
+                    committed, loyal and empathetic professional, also a teamwork enthusiast, creative,
+                    self-taught and intrapreneur, with practices always focused on achieving business
+                    objectives and total customer satisfaction. I am completely open and humble for
+                    this journey of knowledge within the world of technology and innovation.
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="large"5>&#60;Hard Skills&#62;</h2><br>
+                <div class="col">
+                    <a class="nav-link" style="color:white;" href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">
+                        <img id="img02" src="images/hardskills03.png" alt="Hard Skills Art" class="myBorder smartimg">
+                    </a>
+                </div><br>
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <p style="text-align:left;">C<br>Python<br>SQL<br>Flask<br>Jinja</p>
+                    </div>
+                    <div class="col">
+                        <p style="text-align:center;">HTML<br>CSS<br>JavaScript<br>jQuery<br>Bootstrap</p>
+                    </div>
+                    <div class="col">
+                        <p style="text-align:right;">English (B2 Upper)<br>Office Package<br>Scratch</p>
+                    </div>
+                </div><br>
+                <h2 class="large">&#60;Soft Skills&#62;</h2><br>
+                <div class="col">
+                    <a class="nav-link" style="color:white;" href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">
+                        <img id="img03" src="images/softskills01.png" alt="Soft Skills Art" class="myBorder smartimg">
+                    </a>
+                </div><br>
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <p style="text-align:left;">
+                            Self-Taught<br>Researcher<br>Analytical<br>Empathetic
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p style="text-align:center;">
+                            Creative<br>Intrapreneur<br>Teamworker<br>Commited
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p style="text-align:right;">
+                            Resilient<br>Loyal<br>Persistent<br>Proactive
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!--make script to the app interaction-->
+        <script>
+            const images = [document.getElementById('img01'), document.getElementById('img02'), document.getElementById('img03'), document.getElementById('img04'), document.getElementById('img05'), document.getElementById('img06'), document.getElementById('img07'), document.getElementById('img08'), document.getElementById('img09'), document.getElementById('img10'), document.getElementById('img11'), document.getElementById('img12')];
+            for (let element in images) {
+                images[element].onmouseover = function() {
+                    this.style.borderLeft = "ridge";
+                    this.style.borderRight = "groove";
+                    this.style.borderBottom = "groove";
+                    this.style.borderTop = "ridge";
+                };
+                images[element].onmouseout = function() {
+                    this.style.borderLeft = "";
+                    this.style.borderRight = "";
+                    this.style.borderBottom = "";
+                    this.style.borderTop = "";
+                };
+            }
+        </script>
+        <footer>
+            <div id="footer-placeholder">
+                <!--Empty-->
+            </div>
+            <!--make javascript to link the nav html-->
+            <script>
+                $(function() {
+                    $("#footer-placeholder").load("footer.html");
+                });
+            </script>
+            <!--end of navigation bar-->
+        </footer>
+    </body>
+</html>

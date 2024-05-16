@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--describe metadata (information about data)-->
+        <!--specifie characters encoding-->
+        <meta charset="utf-8">
+        <!--make page responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <!--define keywords, description, author and content for serach engines-->
+        <meta property="og:title" content="&#60;road2dev&#62; Fulano's Game">
+        <meta property="og:type" content="developer">
+        <meta property="og:description" content="A fun and meaningful Game, come play it now!!!">
+        <meta property="og:image" content="images/fulano10.png">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="&#60;road2dev&#62; Fulano's Game">
+        <meta property="fb:admins" content="&#60;road2dev&#62;">
+        <meta name="x:card" content="&#60;road2dev&#62; Fulano's Game">
+        <meta name="x:url" content="">
+        <meta name="x:title" content="&#60;road2dev&#62; Fulano's Game">
+        <meta name="x:description" content="A fun and meaningful Game, come play it now!!!">
+        <meta property="x:image" content="images/fulano10.png">
+        <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap, Scratch, Game, Sustainability">
+        <meta name="author" content="Claudia Simone de Souza">
+        <title>
+            &#60;road2dev&#62;Fulano's Game
+        </title>
+        <!--integrate bootstrap library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!--link css file-->
+        <link href="styles_fulano.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark bg-opacity-40">
+        <!--navigation bar-->
+        <div id="nav-placeholder">
+            <!--empty-->
+        </div><br>
+        <!--make the script to nav and scratch API-->
+        <script>
+            $(function() {
+                $("#nav-placeholder").load("nav.html");
+            });
+
+            function showIframe() {
+                let frame = document.getElementById("iframe01");
+                frame.style.display = "block";
+                document.getElementById("btn01").style.display = "none";
+                document.getElementById("imgbtn01").style.display = "none"
+            }
+        </script>
+
+        <div class="container text-center align-self-center">
+            <div class="col">
+                <h2 class="large">&#60;Fulano's Game&#62;</h2>
+            </div>
+            <div class="btn-wrap">
+                <img id="imgbtn01" src="images/fulano06.png" alt="Fulanos Art" class="smartWidth smartimg maxheight myBorder">
+                <iframe id="iframe01" class="myFrame01 myFrame02" title="Fulanos Game" src="https://scratch.mit.edu/projects/777570391/embed" allowfullscreen></iframe>
+                <button id="btn01" type="button" class="btn btn-secondary" onclick="showIframe()">Try It Yourself!</button>
+            </div><br>
+            <div class="col">
+                <h5>&#60;Objective&#62;</h5>
+                <p class="main">
+                    The main objective of this game is to remember the importance of separating trash to recycle it.
+                    Avoid obstacles and see how many useful objects you can make.
+                    Press the green flag to start and the red circle to stop.
+                    Use the arrow keys to move Fulano's, good game!
+                    Just like in the game, do this in real life and help make the world more sustainable!
+                </p>
+            </div>
+            <div class="col">
+                <h5>&#60;How it was made&#62;</h5>
+            </div><br>
+            <div class="col">
+                <img src="images/fulano03.png" alt="Fulanos Art" class="smartWidth smartimg maxheight myBorder">
+                <p style="font-size:10px;">
+                    <a href="https://dazelevl.myportfolio.com/">
+                        &#60;JHXW - dazelevl.myportfolio.com - Luz da Melodia&#62;
+                    </a>
+                </p>
+            </div>
+            <div class="col">
+                <p class="main">
+                    First, I was thinking about making a game with the city of Rio de Janeiro as a backdrop, as it is one
+                    of the best-known cities in my country, with Canarinho, another of Brazil's symbols, as its star.
+                    However, after meeting one of my brother's characters, the monkey Fulano, I decided to invite him to
+                    this project, as an opportunity to show his character and work as a visual designer, so he created the
+                    scenery and all the other characters.
+                </p>
+            </div>
+            <div class="col">
+                <img src="images/fulano04.png" alt="Fulanos Art" class="smartWidth smartimg maxheight myBorder">
+                <p style="font-size:10px;">
+                    <a href="https://dazelevl.myportfolio.com/">
+                        &#60;JHXW - dazelevl.myportfolio.com - Visão Ampla&#62;
+                    </a>
+                </p>
+            </div>
+            <div class="col">
+                <p class="main">
+                    The reason for making this character the star of this game is his relationship with modern urban life,
+                    he is a monkey who makes street art and spreads his thoughts about nature throughout the city through his Graffits.
+                    He wants to have a more balanced and sustainable world and to achieve this he will take real action, collecting rubbish and recycling it,
+                    returning useful objects resulting from this transformation to society.
+                </p>
+            </div>
+            <div class="col">
+                <img src="images/fulano05.png" alt="Fulanos Art" class="smartWidth smartimg maxheight myBorder">
+                <p style="font-size:10px;">
+                    <a href="https://dazelevl.myportfolio.com/">
+                        &#60;JHXW - dazelevl.myportfolio.com - Da Ponte Rasa Pra Cá&#62;
+                    </a>
+                </p>
+            </div>
+            <div class="col">
+                <h5>&#60;Credits&#62;</h5>
+                <p>
+                    Project developed by Claudia Souza as part of the CS50 course from Harvard.<br>
+                    Design Visual by Jonatan Batista.<br>
+                    <a class="nav-link" href=""><img src="images/github01.png" alt="GitHub Icon" style="width:25px;height:20px;"> ClaudiaSouza1812</a>
+                    <a class="nav-link" href=""><img src="images/linkedin01.png" alt="Linjedin Icon" style="width:25px;height:20px;"> claudiasouza1812</a>
+                    <a class="nav-link" href=""><img src="images/instagram01.png" alt="Instagram Icon" style="width:35px;height:30px;"> @dazele.vl</a>
+                    <a class="nav-link" href="https://dazelevl.myportfolio.com/">Site: dazelevl.myportfolio.com</a>
+                </p>
+            </div>
+        </div>
+        <footer><br>
+            <h6>Send Comments Or Suggestions to <a href="mailto:claudia.simmone@gmail.com">Road2Dev</a></h6>
+            <h6>Copyright &#169; Road2Dev Corporation 2023. All Rights Reserved</h6>
+        </footer><br>
+    </body>
+</html>
