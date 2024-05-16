@@ -1,0 +1,79 @@
+.myShadowOne {
+    color: black;
+    text-shadow: -3px 2px 3px white;
+    font-size: 60px;
+    font-family: verdana;
+}
+.myShadowTwo {
+    color: black;
+    text-shadow: -1px 1px 1px white;
+    font-size: 20px;
+    font-family: verdana;
+}
+.myShadowThree {
+    color: gray;
+    text-shadow: -3px 2px 3px white;
+    font-size: 60px;
+    font-family: verdana;
+}
+.myShadowFour {
+    color: gray;
+    text-shadow: -1px 1px 1px white;
+    font-size: 20px;
+    font-family: verdana;
+}
+.myButton {
+    font-family: verdana;
+    background-color: orange;
+    color: solid black;
+}
+
+.myDiv {
+    font-family: verdana;
+    background-color: orange;
+    color: solid black;
+}
+
+.centered {
+    text-align: center;
+    font-family: verdana;
+}
+
+.large {
+    text-align: center;
+    font-size: 40px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.medium {
+    font-size: medium;
+    font-family: verdana;
+}
+
+.small {
+    font-size: 10px;
+    font-family: verdana;
+}
+
+.table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: verdana;
+    background-color: lightGray;
+}
+
+.td {
+    border: 2px solid black;
+    color: solid black;
+}
+
+.carousel-caption {
+    transform: translateY(-90%);
+    bottom: initial;
+    top: 50%;
+}

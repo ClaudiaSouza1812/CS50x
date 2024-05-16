@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/button.css"  />
+        <title>Scoreboard</title>
+    </head>
+    <body class="centered">
+        <h1>Duke vs. UNC Basketball Game</h1>
+        <main>
+            <p>Click the buttons to add a point to each time</p>
+            <table class="table">
+                <tr>
+                    <td class="td">Team 1</td>
+                    <td class="td">Team 2</td>
+                </tr>
+                <tr>
+                    <td id="score1" class="td">0</td>
+                    <td id="score2" class="td">0</td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <button id="add1" class="myButton">+1</button>
+                    </td>
+                    <td class="td">
+                        <button id="add2" class="myButton">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="reset" class="myButton">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <!-- script to change the teams values -->
+        <script>
+            let team1 = 0;
+            let team2 = 0;
+
+            function reset() {
+                team1 = 0;
+                team2 = 0;
+                document.querySelector('#score1').innerHTML = team1;
+                document.querySelector('#score2').innerHTML = team2;
+            }
+
+            document.querySelector('#reset').onclick = function() {
+                reset();
+            }
+
+            document.querySelector('#add1').onclick = function() {
+                team1 = team1 + 1;
+                document.querySelector('#score1').innerHTML = team1;
+                if (team1 == 10) {
+                    document.querySelector('#score1').innerHTML = team1;
+                    setTimeout(alert("Team 1 has won!"), 10000)
+                    reset();
+                }
+            }
+
+            document.querySelector('#add2').onclick = function() {
+                team2 = team2 + 1;
+                document.querySelector('#score2').innerHTML = team2;
+                if (team2 == 10) {
+                    document.querySelector('#score2').innerHTML = team2;
+                    setTimeout(alert("Team 2 has won!"), 10000)
+                    reset();
+                }
+            }
+        </script>
+    </body>
+</html>
