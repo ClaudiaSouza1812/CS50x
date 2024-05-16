@@ -1,0 +1,36 @@
+<!--make the Jinja placeholder to link this content to the layout.html page-->
+{% extends "layout.html" %}
+<!--make the Jinja placeholders with the code needed-->
+{% block body %}
+    <!--make a form which the action will be a route (/register), white a more safe
+    and private method to omit users data (post) in the URL.-->
+    <form action="/register" method="post">
+        <!--Give it a input that receive the students name with autocomplete off,
+        autofocus on, name equal to student name a placeholder called Name of data type text-->
+        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text">
+        <!--make a dropdown menu with some options of sports for students to choose from-->
+        <select name="sport">
+            <!--make a desabled option to avoid starts the page with a pre selected item-->
+            <option desabled selected>Sport</option>
+            <!--use a jinja placeholder with a for loop to show the available sports-->
+            {% for sport in sports %}
+                <option value="{{ sport }}">{{ sport }}</option>
+            {% endfor %}
+        </select>
+        <!--make a button to submit the student choice-->
+        <button type="submit">Register</button>
+    </form>
+
+{% endblock %}
+
+<!-- radio selection option:
+    <form action="/register" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text">
+            {% for sport in sports %}
+                <input name="sport" type="radio" value="{{ sport }}"> {{ sport }}
+            {% endfor %}
+        <button type="submit">Register</button>
+    </form>
+
+
+-->

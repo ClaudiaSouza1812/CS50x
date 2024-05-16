@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <div class="container text-center">
+        <div class="mb-3">
+            <label for="wallet">Quote:</label>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["name"] }}</td>
+                    <td>{{ stock["symbol"] }}</td>
+                    <td>{{ stock["price"] }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

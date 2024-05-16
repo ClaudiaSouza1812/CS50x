@@ -1,0 +1,11 @@
+<!--Jinja tags that plugs the content of one HTML file to another-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <form action="/" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <button type="submit">Greet</button>
+    </form>
+
+{% endblock %}

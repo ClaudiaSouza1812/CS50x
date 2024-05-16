@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>shows</title>
+    </head>
+    <body>
+        <input autocomplete="off" autofocus placeholder="Query" type="search">
+        <ul></ul>
+        <script>
+            // declare a variable "input", that will be iqual to the first tag "input" found in the document;
+            // add an event to the variable that when the user inputs a value, it will call an anonymous function asynchronous;
+            // declare a variable "response" that will have the value returned by calling the fetch function. It gets the data
+            // from the server using the route + the user input, then will search in the database file inside the route described;
+            // declare a variable "shows" that will have the response translated to text;
+            // search the document for the UL tag and change its content by the shows table containing the matched shows;
+            let input = document.querySelector('input');
+            input.addEventListener('input', async function() {
+                let response = await fetch('/search?q=' + input.value);
+                let shows = await response.text();
+                document.querySelector('ul').innerHTML = shows;
+            })
+        </script>
+    </body>
+</html>

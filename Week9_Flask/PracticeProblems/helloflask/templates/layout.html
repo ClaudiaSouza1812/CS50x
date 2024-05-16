@@ -1,0 +1,17 @@
+<!-- determine the file type -->
+<!DOCTYPE html>
+
+<!-- start the html file -->
+<html>
+    <head lang="en">
+        <!-- ensure the app is responsive -->
+        <meta name="viewport" content="initial-scale=1" width="device-width">
+        <title>Hello, Flask</title>
+    </head>
+    <body>
+        <h1>Hello, Flask!</h1>
+        <!-- use jinja placeholder to extend all of the content of this HTML file while,
+             also, adding some custom content from other html's files -->
+        {% block body %}{% endblock %}
+    </body>
+</html>

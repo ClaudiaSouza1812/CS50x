@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="container text-center">
+        <div class="mb-3">
+            <label for="wallet">Your Wallet:</label>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Number of Shares</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Current Total Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for stock in wallet %}
+                <tr>
+                    <td>{{ stock["stock_name"] }}</td>
+                    <td>{{ stock["shares"] }}</td>
+                    <td>{{ stock["price"] }}</td>
+                    <td>{{ stock["total"] }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            <thead>
+                <tr>
+                    <th>$ Balance (Free To Invest)</th>
+                    <th>$ Total (Balance + Shares)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ cash }}</td>
+                    <td>{{ grandtotal }}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col">
+                <form action="/buy" method="post">
+                    <div class="mb-3">
+                        <label for="symbols">Buy:</label>
+                    </div>
+                    <h6>Symbol - Shares</h6>
+                    <div class="mb-3">
+                        <input autofocus id="symbol" name="symbol" placeholder="stock symbol" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <input id="shares" name="shares" placeholder="shares number" type="number" min="1">
+                    </div>
+                    <button class="btn btn-success" name="submit" type="submit">Buy</button>
+                </form>
+            </div>
+            <div class="col">
+                <form action="/sell" method="post">
+                    <div class="mb-3">
+                        <label for="symbols">Sell:</label>
+                    </div>
+                    <h6>Symbol - Shares - Current Price</h6>
+                    <select class="mb-3" name="symbol" id="symbol">
+                        <option selected disabled class="mb-3" autofocus value="empty">Select</option>
+                        {% for symbol in wallet %}
+                            <option>{{ symbol["stock_name"] }}</option>
+                            <option disabled>({{ symbol["shares"]}}) $: {{ symbol["price"] }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="mb-3">
+                        <input id="shares" name="shares" placeholder="shares number" type="number" min="1">
+                    </div>
+                    <button class="btn btn-success" name="submit" type="submit">Sell</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

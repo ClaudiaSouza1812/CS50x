@@ -1,0 +1,18 @@
+<!-- use jinja plugin to extend the html structure to this file -->
+{% extends "layout.html" %}
+
+<!-- use jinja plugin to export the html body to the layout file -->
+{% block body %}
+
+    <!-- make a form with the form-handler (action=file with the script to processing the
+        input data or it's path "/" to it) and the secure request method (method=post) -->
+    <form action="/" method="post">
+        What is your favorite color?
+        <select name="color">
+            <option selected disabled></option>
+            <option value="red">Harvard Crimson</option>
+            <option value="blue">Yale Blue</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

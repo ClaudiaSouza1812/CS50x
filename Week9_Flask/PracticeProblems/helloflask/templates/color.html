@@ -1,0 +1,10 @@
+<!-- use jinja plugin to extend the html structure to this file -->
+{% extends "layout.html" %}
+
+<!-- use jinja plugin to export the html body to the layout file -->
+{% block body %}
+
+    <!-- use jinja plugin to set css color and the print of the color to user -->
+    <p style="color: {{ color }}">Your favorite color is {{ color }}.</p>
+    
+{% endblock %}
