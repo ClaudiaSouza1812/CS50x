@@ -1,0 +1,5 @@
+ask user the height and stor it at the variable v
+if v height is less than 1 or bigger than 8, back to line 1 and ask again
+start i with zero as a value and sum 1 to it until dont reach the v number
+print i hashes
+print a new line
